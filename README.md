@@ -1,20 +1,24 @@
 # Likelihood Index
 
-**An open framework for estimating whether a brand's leading indicators of future choice are strengthening or weakening.**
+**An open-source marketing measurement and brand analytics framework for estimating whether a brand is becoming more or less likely to be chosen.**
 
 > Marketing doesn't make decisions. It changes the odds.
 
-The Likelihood Index is an open-source measurement framework inspired by *The Art of Likelihood*. It is designed for marketers, analysts, researchers, and builders who want a transparent way to combine directional brand signals without pretending that any single dashboard can replay exactly why a person chose a brand.
+![Likelihood Index social preview](assets/social-preview.svg)
+
+The **Likelihood Index** is an open-source framework inspired by *The Art of Likelihood*. It is designed for marketers, analysts, researchers, and builders who want a more transparent way to combine directional brand signals **without pretending that any single dashboard can perfectly replay why a person chose a brand**.
+
+The central question is simple:
+
+**Are we becoming more likely to be chosen — and what evidence supports that read?**
 
 ## What it outputs
 
-The framework intentionally does **not** collapse everything into one magical score.
+The framework intentionally does **not** collapse everything into one magical score. It reports three separate measures:
 
-It reports three separate measures:
-
-1. **Likelihood Index** — are leading indicators moving toward or away from future choice?
-2. **Evidence Confidence** — how much should we trust that directional read?
-3. **System Coherence** — are independent signal families reinforcing one another or contradicting one another?
+1. **Likelihood Index** — directional momentum toward future choice.
+2. **Evidence Confidence** — how much trust to place in the read.
+3. **System Coherence** — whether independent signal families reinforce one another or conflict.
 
 Actual outcomes such as sales, penetration, market share, and new-customer rate should remain **outside** the index and be used to validate whether the leading indicator system predicted the future.
 
@@ -24,6 +28,28 @@ Actual outcomes such as sales, penetration, market share, and new-customer rate 
 - It is **not** an attribution model.
 - It does **not** claim that correlation proves causation.
 - It is **not** a substitute for incrementality testing, MMM, experimentation, or brand tracking.
+- It is **not** a black-box score intended to replace judgment.
+
+## Why this exists
+
+Marketers increasingly work across paid media, organic content, creators, search, retail signals, reviews, AI discovery, and brand demand. Consumers do not experience those as isolated channels. They experience them as a stream of evidence.
+
+The Likelihood Index is a practical attempt to:
+
+- combine those signals more honestly,
+- separate the **signal** from the **confidence in the signal**,
+- account for whether signal families are **working together**,
+- and create a bridge between brand thinking, media measurement, and future outcomes.
+
+## How the model works
+
+![How the Likelihood Index works](assets/likelihood-index-system.svg)
+
+The model uses three lenses:
+
+- **Likelihood Index** to estimate directional momentum.
+- **Evidence Confidence** to express the quality and trustworthiness of the evidence.
+- **System Coherence** to capture whether signal families reinforce one another or move in opposite directions.
 
 ## Default signal families
 
@@ -75,10 +101,10 @@ Inputs are standardized effects, typically z-scores versus a brand baseline, cat
 Metrics from different systems cannot be added raw. Convert each metric to a standardized directional effect first.
 
 ### 2. Bound outliers
-The implementation applies a hyperbolic tangent transform so one viral post or anomalous observation cannot hijack the index.
+The reference implementation applies a hyperbolic tangent transform so one viral post or anomalous observation cannot hijack the index.
 
 ### 3. Aggregate inside signal families first
-This prevents a dozen social metrics from overpowering two meaningful retail-availability metrics simply because there are more of them.
+This prevents a dozen social metrics from overpowering a small number of meaningful retail-availability metrics simply because there are more of them.
 
 ### 4. Weight by evidence quality
 Recency, sample sufficiency, source quality, coverage, and independence should affect confidence.
@@ -102,22 +128,38 @@ Always read the index together with **Evidence Confidence** and **System Coheren
 
 - `src/likelihood_index/` — reference implementation
 - `tests/` — synthetic stress tests
+- `examples/` — simple examples
 - `docs/methodology.md` — model design
 - `docs/validation.md` — recommended real-world calibration process
-- `examples/` — simple examples
+- `docs/GITHUB_REPO_SETUP.md` — recommended GitHub description, topics, preview, and release setup
+- `.github/ISSUE_TEMPLATE/` — starter contribution prompts
+- `RELEASE_v0.1.0.md` — first public release notes
+
+## Contribute
+
+If this framework is useful, **test it, challenge it, fork it, improve it, and share what you learn**.
+
+Good contribution areas include:
+
+- sample or synthetic datasets,
+- notebook examples,
+- alternative weighting schemes,
+- confidence-calibration approaches,
+- validation against real market outcomes,
+- and better visualizations.
+
+See `CONTRIBUTING.md` and the issue templates in `.github/ISSUE_TEMPLATE/`.
 
 ## Open-source philosophy
-
-The framework is intentionally transparent. If it is useful, test it, challenge it, fork it, improve it, and share what you learn.
 
 The ambition is not to create a proprietary black box. It is to create a more useful common language for asking:
 
 **Are we becoming more likely to be chosen — and what evidence says so?**
 
-## License
-
-Apache License 2.0. See `LICENSE`.
-
 ## Status
 
 **Experimental / pre-validation.** The reference implementation has been stress-tested with synthetic scenarios, but it has not yet been validated as a universal predictor of brand outcomes.
+
+## License
+
+Apache License 2.0. See `LICENSE`.
