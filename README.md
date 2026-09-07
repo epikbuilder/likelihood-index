@@ -4,7 +4,7 @@
 
 > Marketing doesn't make decisions. It changes the odds.
 
-![Likelihood Index social preview](assets/social-preview.svg)
+![Likelihood Index social preview](assets/likelihood-index-social-preview.jpg)
 
 The **Likelihood Index** is an open-source framework inspired by *The Art of Likelihood*. It is designed for marketers, analysts, researchers, and builders who want a more transparent way to combine directional brand signals **without pretending that any single dashboard can perfectly replay why a person chose a brand**.
 
@@ -43,7 +43,7 @@ The Likelihood Index is a practical attempt to:
 
 ## How the model works
 
-![How the Likelihood Index works](assets/likelihood-index-system.svg)
+![How the Likelihood Index works](assets/likelihood-index-system.jpg)
 
 The model uses three lenses:
 
