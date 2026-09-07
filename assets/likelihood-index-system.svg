@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#07111d"/>
+  <g stroke="#213246" stroke-width="1" opacity=".5"><path d="M0 95H1400M0 190H1400M0 285H1400M0 380H1400M0 475H1400M0 570H1400M0 665H1400"/><path d="M100 0V760M200 0V760M300 0V760M400 0V760M500 0V760M600 0V760M700 0V760M800 0V760M900 0V760M1000 0V760M1100 0V760M1200 0V760M1300 0V760"/></g>
+  <text x="70" y="90" fill="#f4efe6" font-family="Georgia,serif" font-size="62" font-weight="700">HOW THE</text>
+  <text x="70" y="160" fill="#ff5a1f" font-family="Georgia,serif" font-size="70" font-weight="700">LIKELIHOOD INDEX</text>
+  <text x="700" y="160" fill="#f4efe6" font-family="Georgia,serif" font-size="70" font-weight="700">WORKS</text>
+  <text x="72" y="205" fill="#c7d1dc" font-family="Georgia,serif" font-size="28" font-style="italic">Three lenses. One better question.</text>
+
+  <g font-family="Arial,sans-serif">
+    <rect x="80" y="270" width="350" height="190" rx="16" fill="#0e1b2a" stroke="#ff5a1f" stroke-width="3"/>
+    <text x="255" y="340" text-anchor="middle" fill="#f4efe6" font-family="Georgia,serif" font-size="34" font-weight="700">LIKELIHOOD INDEX</text>
+    <text x="255" y="395" text-anchor="middle" fill="#c7d1dc" font-size="20">Directional momentum</text>
+    <text x="255" y="423" text-anchor="middle" fill="#c7d1dc" font-size="20">toward future choice</text>
+
+    <rect x="525" y="270" width="350" height="190" rx="16" fill="#0e1b2a" stroke="#2f79c7" stroke-width="3"/>
+    <text x="700" y="340" text-anchor="middle" fill="#67a7ef" font-family="Georgia,serif" font-size="34" font-weight="700">EVIDENCE</text>
+    <text x="700" y="378" text-anchor="middle" fill="#67a7ef" font-family="Georgia,serif" font-size="34" font-weight="700">CONFIDENCE</text>
+    <text x="700" y="423" text-anchor="middle" fill="#c7d1dc" font-size="20">How much trust to place in the read</text>
+
+    <rect x="970" y="270" width="350" height="190" rx="16" fill="#0e1b2a" stroke="#ff5a1f" stroke-width="3"/>
+    <text x="1145" y="340" text-anchor="middle" fill="#f4efe6" font-family="Georgia,serif" font-size="34" font-weight="700">SYSTEM COHERENCE</text>
+    <text x="1145" y="395" text-anchor="middle" fill="#c7d1dc" font-size="20">Whether signal families reinforce</text>
+    <text x="1145" y="423" text-anchor="middle" fill="#c7d1dc" font-size="20">or conflict</text>
+
+    <path d="M430 365H525" stroke="#f4efe6" stroke-width="3" marker-end="url(#a)"/><path d="M875 365H970" stroke="#f4efe6" stroke-width="3"/>
+
+    <text x="700" y="520" text-anchor="middle" fill="#aeb9c8" font-size="18" letter-spacing="4">INPUT SIGNAL FAMILIES</text>
+    <g fill="#0e1b2a" stroke-width="2">
+      <rect x="70" y="555" width="190" height="90" rx="12" stroke="#ff5a1f"/><rect x="285" y="555" width="190" height="90" rx="12" stroke="#2f79c7"/><rect x="500" y="555" width="190" height="90" rx="12" stroke="#ff5a1f"/><rect x="715" y="555" width="190" height="90" rx="12" stroke="#2f79c7"/><rect x="930" y="555" width="190" height="90" rx="12" stroke="#ff5a1f"/><rect x="1145" y="555" width="190" height="90" rx="12" stroke="#2f79c7"/>
+    </g>
+    <g fill="#f4efe6" font-size="17" text-anchor="middle"><text x="165" y="595">DEMAND</text><text x="165" y="620">FORMATION</text><text x="380" y="595">SOCIAL</text><text x="380" y="620">PROOF</text><text x="595" y="595">MEDIA</text><text x="595" y="620">RESONANCE</text><text x="810" y="607">AVAILABILITY</text><text x="1025" y="607">DISCOVERABILITY</text><text x="1240" y="595">BRAND</text><text x="1240" y="620">MEANING</text></g>
+  </g>
+  <text x="70" y="710" fill="#f4efe6" font-family="Georgia,serif" font-size="29" font-style="italic">Marketing doesn't make decisions.</text>
+  <text x="420" y="710" fill="#ff5a1f" font-family="Georgia,serif" font-size="29" font-style="italic">It changes the odds.</text>
+</svg>
