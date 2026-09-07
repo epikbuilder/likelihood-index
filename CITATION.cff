@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use the Likelihood Index in research or professional work, please cite this repository."
+title: "Likelihood Index"
+type: software
+authors:
+  - family-names: "Ohl"
+    given-names: "Nate"
+version: 0.1.0
+date-released: 2026-09-07
+license: Apache-2.0
